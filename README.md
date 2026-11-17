@@ -15,7 +15,7 @@ Traditional character rigging relies heavily on **Forward Kinematics (FK)** and 
 
 ## Key Innovations
 
-* **Chiral Spinal Winding ($\theta(h)$):** Parameterizes vertebral spans from pelvic root ($h = 0.0$) to cranial apex ($h = 1.0$), ensuring an exact $180^\circ$ counter-torque inversion ($7\pi \equiv \pi \pmod{2\pi}$).
+* **Chiral Spinal Winding $\theta(h)$:** Parameterizes vertebral spans from pelvic root ($h = 0.0$) to cranial apex ($h = 1.0$), ensuring an exact $180^\circ$ counter-torque inversion ($7\pi \equiv \pi \pmod{2\pi}$).
 * **Manifold Invariant Tensor Hashing:** Enforces a strict Frobenius norm boundary threshold ($\kappa \le 0.20$) to prevent catastrophic pose spikes and inter-frame drift.
 * **Dual-Quaternion Lie Group Mappings:** Eliminates gimbal lock and dual-axis pinching by evaluating shortest-path geodesics on the unit hypersphere $\text{SU}(2)$.
 * **Wu Wei Equilibrium:** Integrates an energy-minimized postural solver to keep center-of-mass projections stably within the support polygon.
