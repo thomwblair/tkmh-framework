@@ -1,4 +1,4 @@
-![TKMH 3.5-Turn Chiral Spine](docs/chiral_spine_preview.png)
+![TKMH 3.5-Turn Chiral Spine](docs/chiral_spine_turntable.gif)
 
 # Topological Kinematics and Chiral Flow (TKMH)
 
