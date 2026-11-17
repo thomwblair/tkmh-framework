@@ -1,3 +1,5 @@
+![TKMH 3.5-Turn Chiral Spine](docs/chiral_spine_preview.png)
+
 # Topological Kinematics and Chiral Flow (TKMH)
 
 > **Standard Proposal for Interoperable Character Rigging & GPU Compute Runtimes**
