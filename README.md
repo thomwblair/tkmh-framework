@@ -41,14 +41,14 @@ Topological Kinematics and Chiral Flow/
 ### 1. Validate a `.chiral` Binary Container (Python)
 You can use the provided Python script to inspect container headers, verify magic signatures (`CHRL`), and check offset bounds:
 ```bash
-python validate_chiral.py sample_asset.chiral
+python validate_chiral.py samples/sample.chiral
 ```
 
 ### 2. Compile and Run the C++ Parser
 The C++ parser enforces memory safety and strict bounds checking on binary payloads:
 ```bash
 g++ -std=c++17 tkmh_parser.cpp -o tkmh_parser
-./tkmh_parser sample_asset.chiral
+./tkmh_parser samples/sample.chiral
 ```
 
 ### 3. OpenUSD Studio Integration
