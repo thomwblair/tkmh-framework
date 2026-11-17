@@ -1,0 +1,23 @@
+#usda 1.0
+(
+    doc = "Topological Kinematics and Chiral Flow (TKMH) OpenUSD Schema Extensions"
+    subLayers = []
+)
+
+class "TKMHSpineAPI" (
+    doc = "Custom schema applying 3.5-turn chiral spinal winding and Frobenius manifold constraints to skeletal rigs."
+)
+{
+    uniform token chiral:windingMode = "SevenPiSpinal" (
+        doc = "Enforces cumulative torsional rotation angle theta(h) = 7*pi*h + phi_0."
+    )
+    float chiral:normalizedHeightRange = [0.0, 1.0] (
+        doc = "Normalized vertebral span where 0.0 is pelvic root and 1.0 is cranial apex."
+    )
+    float chiral:manifoldKappaLimit = 0.20 (
+        doc = "Strict Frobenius norm boundary threshold governing permissible inter-frame tensor change."
+    )
+    bool chiral:wuWeiEquilibriumEnabled = true (
+        doc = "Enables energy-minimized center-of-mass support polygon balancing."
+    )
+}
